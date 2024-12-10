@@ -1,0 +1,267 @@
+/*------------------------------------*\
+  #CUSTOM-PROPERTIES
+\*------------------------------------*/
+
+:root {
+  /* Font */
+  --font-primary: "Rubik", sans-serif;
+
+  /* Colors */
+
+  --color-Very-Dark-Gray: hsl(0, 0%, 17%);
+  --color-Dark-Gray: hsl(0, 0%, 34%);
+  --color-white: hsl(0, 0%, 100%);
+}
+
+/*------------------------------------*\
+    #RESET
+  \*------------------------------------*/
+
+html {
+  box-sizing: border-box;
+  font-size: 18px;
+  font-family: var(--font-primary);
+  scroll-behavior: smooth;
+}
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+input[type=number] { -moz-appearance:textfield; }
+
+/*------------------------------------*\
+    #COMPONENTS
+  \*------------------------------------*/
+
+/*------------------------------------*\
+  #UTILITIES
+  \*------------------------------------*/
+/***************\
+  #Mobile - 320px - XS
+  \***************/
+
+.data {
+  width: 270px;
+  position: absolute;
+  background-color: var(--color-white);
+  border-radius: 15px;
+  padding: 1.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: .75rem;
+  top: 150px;
+  z-index: 100;
+  text-align: center;
+}
+
+.data__section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .35rem;
+}
+
+.data__info {
+  color: var(--color-Very-Dark-Gray);
+  font-size: 1rem;
+}
+
+.data__title{
+  color: var(--color-Dark-Gray);
+  font-size: .55rem;
+  font-weight: 500;
+  letter-spacing: .05rem;
+}
+
+.header {
+  position: relative;
+  height: 32.5vh;
+  background-image: url(./images/pattern-bg-mobile.png);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header__btn {
+  background-color: var(--color-Very-Dark-Gray);
+  border: none;
+  display: flex;
+  align-items: center;
+  border-radius: 0 10px 10px 0;
+  padding: 1.2rem 1.4rem;
+}
+
+
+
+.header__form {
+  height: 50px;
+  width: 327px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 6.5rem;
+}
+
+.header__input {
+  
+  width: 100%;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: var(--font-primary);
+  color: var(--color-Very-Dark-Gray);
+  padding: 0.25rem 1.25rem;
+  border-radius: 10px 0 0 10px;
+  border: none;
+  outline: none;
+}
+
+.header__input::placeholder{
+  font-size: .65rem;
+  font-weight: 400;
+}
+
+
+
+.header__title {
+  font-size: 1.5rem;
+  color: var(--color-white);
+  font-weight: 400;
+  margin: 1.5rem;
+}
+
+#map {
+    height: 67.5vh;
+    position: relative;
+    z-index: 90;
+}
+
+/****************\
+  #Tablet - 640px - S
+  \****************/
+
+@media (640px < width) {
+}
+
+/******************\
+  #Tablet L - 768px - M
+  \******************/
+
+@media (768px < width) {
+}
+
+/******************\
+  #Desktop - 1024px - L
+  \******************/
+
+@media (1024px < width) {
+
+
+
+}
+
+/*********************\
+  #Desktop XL - 1280px - XL
+  \*********************/
+
+@media (1280px < width) {
+  .data {
+    height: 140px;
+    width: 1050px;
+    position: absolute;
+    background-color: var(--color-white);
+    border-radius: 15px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    bottom: -55px;
+  }
+
+  .header {
+    background-image: url(./images/pattern-bg-desktop.png);
+  }
+
+  .header__btn:hover{
+    cursor: pointer;
+    background-color: var(--color-Dark-Gray);
+  }
+
+  .header__form {
+    width: 555px;
+  }
+
+  
+.header__input::placeholder{
+  font-size: .85rem;
+  font-weight: 400;
+}
+  .line {
+    border: 1px solid var(--color-Dark-Gray);
+    height: 70px;
+  }
+
+
+}
+
+/*************\
+  #4K - 1536px - XXL
+  \*************/
+
+@media (1600px < width) {
+}
+
+/*------------------------------------*\
+  #SITE-STYLES
+  \*------------------------------------*/
+
+/***************\
+  #Mobile - 320px - XS
+  \***************/
+
+/****************\
+  #Tablet - 640px - S
+  \****************/
+
+@media (640px < width) {
+}
+
+/******************\
+  #Tablet L - 768px - M
+  \******************/
+
+@media (768px < width) {
+}
+
+/******************\
+  #Desktop - 1024px - L
+  \******************/
+
+@media (1024px < width) {
+}
+
+/*********************\
+  #Desktop XL - 1280px - XL
+  \*********************/
+
+@media (1280px < width) {
+}
+
+/*************\
+  #4K - 1536px - XXL
+  \*************/
+
+@media (1600px < width) {
+}

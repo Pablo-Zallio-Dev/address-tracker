@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+
+  <link rel="stylesheet" href="style.css">
+
+  <title>Frontend Mentor | IP Address Tracker</title>
+
+
+</head>
+
+<body>
+
+  <header class="header">
+    <h1 class="header__title">IP Address Tracker</h1>
+    <form class="header__form" action="">
+      <input class="header__input" type="text" name="ip" id="ip" placeholder="Search for any IP address or domain">
+      <button class="header__btn" type="button"><img src="./images/icon-arrow.svg" alt=""></button>
+    </form>
+    <article class="data">
+      <article class="data__section">
+        <h4 class="data__title">IP ADDRESS</h4>
+        <H3 class="data__info data__info--ip"></H3>
+      </article>
+      <div class="line"></div>
+      <article class="data__section">
+        <h4 class="data__title">LOCATION</h4>
+        <H3 class="data__info data__info--address"></H3>
+      </article>
+      <div class="line"></div>
+      <article class="data__section">
+        <h4 class="data__title">TIMEZONE</h4>
+        <H3 class="data__info data__info--time"></H3>
+      </article>
+      <div class="line"></div>
+      <article class="data__section">
+        <h4 class="data__title">ISP</h4>
+        <H3 class="data__info data__info--isp"></H3>
+      </article>
+    </article>
+  </header>
+
+  <div id="map"></div>
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
+
+
+
+<!-- 
+
+
+  IP Address Tracker
+
+  Search for any IP address or domain
+
+  IP Address
+  Location
+  Timezone
+    UTC add offset value dynamically using the API 
+  ISP
+  
+  
+  -->
