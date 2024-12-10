@@ -51,6 +51,26 @@ input[type=number] { -moz-appearance:textfield; }
   #Mobile - 320px - XS
   \***************/
 
+  .attribution {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(34, 34, 34);
+    color: var(--color-white);
+    font-size: .75rem;
+    padding: .75rem 0;
+  }
+  
+  .attribution a {
+    text-decoration: none;
+    color: var(--color-Dark-Gray);
+    margin: 0 .25rem;
+    transition: color .5s ease;
+  }
+
+  .attribution a:hover {
+    color: var(--color-white);
+  }
+
 .data {
   width: 270px;
   position: absolute;
