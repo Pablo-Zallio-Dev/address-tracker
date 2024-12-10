@@ -95,6 +95,7 @@ input[type=number] { -moz-appearance:textfield; }
 .data__info {
   color: var(--color-Very-Dark-Gray);
   font-size: 1rem;
+  font-weight: 500;
 }
 
 .data__title{

@@ -34,7 +34,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL:  [GitHub](https://github.com/Pablo-Zallio-Dev/address-tracker/tree/main/images)
+- Solution URL:  [GitHub](https://github.com/Pablo-Zallio-Dev/address-tracker)
 - Live Site URL: [Netlify](https://tracker-address-app.netlify.app/)
 
 ## My process
